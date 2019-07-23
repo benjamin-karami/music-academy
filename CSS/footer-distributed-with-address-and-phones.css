@@ -101,7 +101,11 @@
 }
 
 @media (min-width: 1200px) {
+  .sec-footer > .container {
+    max-width: 1600px;
+  }
 }
-.sec-footer > .container {
-  max-width: 1400px;
+
+.card-text ul li {
+  font-size: 20px;
 }
