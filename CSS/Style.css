@@ -1,0 +1,451 @@
+@font-face {
+  src: url("../fonts/Gandom.ttf");
+  font-family: gandom;
+}
+
+body {
+  font-family: gandom, serif;
+}
+
+.navbar-collapse {
+  text-align: right;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 0;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background-color: black;
+}
+
+.nav-link-ltr::before {
+  width: 0;
+  bottom: 10px;
+  right: 0;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+}
+
+.parallax {
+  background-image: url("../imge/background-image.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.first-section {
+  height: 650px;
+  color: white;
+  direction: rtl;
+  text-align: right;
+}
+
+.secound-section {
+  height: 1600px;
+  direction: rtl;
+  text-align: right;
+}
+
+.matn {
+  height: 200px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #333;
+}
+
+.black-piano {
+  background-image: url("../imge/home-img01.jpg");
+  height: 550px;
+  width: 90%;
+  border-radius: 50%;
+  margin-right: 40px;
+}
+
+.white-lady-violin {
+  width: 700px;
+  height: 900px;
+  margin-right: -200px;
+}
+
+.music-groups {
+  direction: rtl;
+  text-align: center;
+}
+
+.third-section {
+  background-color: floralwhite;
+}
+
+.third-section-left img {
+  width: 400px;
+  height: 500px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+.third-section-right {
+  direction: rtl;
+  text-align: right;
+  margin-top: 30px;
+}
+
+.third-section-right h3,
+h4 {
+  text-align: center;
+}
+
+.third-section-left {
+  margin-top: 30px;
+}
+
+.news {
+  background-image: url("../imge/content-bg02.png");
+  height: 300px;
+  margin-top: 200px;
+}
+
+.news-text {
+  direction: rtl;
+  text-align: right;
+  color: white;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+.news-container {
+  position: relative;
+}
+
+.news-image {
+  position: absolute;
+  left: 50px;
+  top: -80px;
+}
+
+.fifth-section {
+  margin-top: 300px;
+  margin-right: 20px;
+  margin-left: 40px;
+}
+
+.fifth-section-text {
+  direction: rtl;
+  text-align: center;
+}
+
+.fifth-section-image {
+  border-radius: 6px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 20px 0;
+  position: relative;
+  color: white;
+  border-radius: 5px;
+}
+
+.button-1 {
+  border: 2px solid navajowhite;
+  color: #34495e;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-1:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  background-color: navajowhite;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-1:hover {
+  color: #34495e;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button-1:hover:before {
+  left: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .white-lady-violin {
+    width: 600px;
+    height: 800px;
+    margin-right: -120px;
+  }
+
+  .news-image img {
+    transform: scale(0.8);
+  }
+
+  .fifth-section {
+    margin-right: -26px;
+    margin-left: 0;
+  }
+
+  .fifth-section-image {
+    transform: scale(0.7);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .white-lady-violin {
+    display: none;
+  }
+
+  .black-piano {
+    display: none;
+  }
+
+  .black-piano-text {
+    text-align: center;
+  }
+
+  .music-groups {
+    margin-right: 10px;
+  }
+
+  .news-image img {
+    transform: scale(0.8);
+  }
+
+  .fifth-section {
+    margin-right: -26px;
+    margin-left: 0;
+  }
+
+  .fifth-section-image {
+    transform: scale(0.7);
+  }
+
+  .secound-section {
+    height: 1330px;
+  }
+
+  .news {
+    margin-top: 130px;
+  }
+
+  .fifth-section {
+    margin-top: 130px;
+  }
+
+  .news-image {
+    top: -130px;
+  }
+
+  .footer-distributed {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .white-lady-violin {
+    display: none;
+  }
+
+  .third-section {
+    margin-top: 140px;
+  }
+
+  .black-piano {
+    display: none;
+  }
+
+  .black-piano-text {
+    text-align: center;
+  }
+
+  .music-groups {
+    margin-right: 10px;
+  }
+
+  .news-image img {
+    display: none;
+  }
+
+  .fifth-section {
+    margin-right: -26px;
+    margin-left: 0;
+  }
+
+  .fifth-section-image {
+    display: none;
+  }
+
+  .secound-section {
+    height: 1330px;
+  }
+
+  .news {
+    margin-top: 40px;
+  }
+
+  .fifth-section {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  .third-section-left img {
+    display: none;
+  }
+
+  .matn h1 {
+    font-size: 35px;
+  }
+
+  .matn h3 {
+    font-size: 20px;
+  }
+
+  .matn h5 {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .white-lady-violin {
+    display: none;
+  }
+
+  .third-section {
+    margin-top: -70px;
+  }
+
+  .black-piano {
+    display: none;
+  }
+
+  .music-groups {
+    margin-right: -3px;
+  }
+
+  .black-piano-text {
+    text-align: center;
+  }
+
+  .news-image img {
+    display: none;
+  }
+
+  .fifth-section-image {
+    display: none;
+  }
+
+  .secound-section {
+    height: 1750px;
+  }
+
+  .news {
+    margin-top: 40px;
+  }
+
+  .news-text {
+    transform: scale(0.9);
+  }
+
+  .fifth-section {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: -25px;
+  }
+
+  .third-section-left img {
+    display: none;
+  }
+
+  .fifth-section-text {
+    transform: scale(0.8);
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .matn h1 {
+    font-size: 35px;
+  }
+
+  .matn h3 {
+    font-size: 20px;
+  }
+
+  .matn h5 {
+    font-size: 17px;
+  }
+}
+
+.note-page-box img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.note-section-margin {
+  margin: 50px auto;
+}
+
+.note-page-box img:hover {
+  transform: scale(1.03);
+}
+
+.note-page-mainpage {
+  margin-top: 100px;
+}
+
+.note-header {
+  margin-top: 30px !important;
+}
+
+.slide-violin {
+  width: 100%;
+  height: 300px;
+}
+
+.musisian-pic img {
+  width: 100%;
+  height: 200px;
+}
+
+.musisian-pic {
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+#myMap {
+  width: 100%;
+  height: 500px;
+  border: 2px solid rgba(83, 83, 83, 1);
+}

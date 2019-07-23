@@ -1,0 +1,21 @@
+.note-card {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.note-card img {
+  filter: grayscale(70%);
+  transition: 0.5s;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 320px;
+}
+
+.note-card:hover img {
+  filter: grayscale(0);
+}
+
+.note-section-header {
+  flex-grow: 2;
+}
