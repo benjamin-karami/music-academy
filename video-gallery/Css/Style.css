@@ -29,7 +29,7 @@
 }
 
 .vid:hover img {
-  filter: blur(3px) grayscale(50%);
+  filter: blur(3px) grayscale(50%) brightness(50%);
 }
 
 .vid {
