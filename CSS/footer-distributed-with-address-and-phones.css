@@ -107,5 +107,10 @@
 }
 
 .card-text ul li {
-  font-size: 20px;
+  font-size: 23px;
+}
+
+.card-text ul li a {
+  text-decoration: none;
+  color: #000;
 }

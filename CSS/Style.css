@@ -3,8 +3,23 @@
   font-family: gandom;
 }
 
+@font-face {
+  src: url("../fonts/IRAN-Sans-Medium.ttf");
+  font-family: IranSans-medium;
+}
+
+@font-face {
+  src: url("../fonts/IRAN-Sans-Light.ttf");
+  font-family: IranSans-light;
+}
+
+@font-face {
+  src: url("../fonts/IRAN-Sans-UltraLight.ttf");
+  font-family: IranSans-Ulight;
+}
+
 body {
-  font-family: gandom, serif;
+  font-family: gandom;
 }
 
 .navbar-collapse {
